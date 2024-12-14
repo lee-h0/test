@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>9페이지</title>
+  <style>
+    fieldset {
+      position: fixed;
+      bottom: 80px;
+      width: 1030px;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #4caf50;
+    }
+
+    .header {
+      font-size: 18px;
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
+
+    .weather {
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    .weather-form {
+      margin: 20px 0;
+    }
+
+    .weather-form input {
+      margin-right: 10px;
+      padding: 5px;
+      width: 25px;
+      text-align: left;
+    }
+
+    .food-list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-top: 20px;
+      float: left;
+    }
+
+    .food-item {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+      background-color: #fff;
+      width: 300px;
+      margin: 0 auto;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .food-item .food-image {
+      width: 200px;
+      height: 200px;
+      transition: transform 0.3s ease;
+    }
+
+    .food-item:active::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.3);
+      z-index: 1;
+    }
+
+    .food-image {
+      width: 200px;
+      height: 200px;
+    }
+
+    .footer {
+      margin-top: 30px;
+      font-size: 2022px;
+    }
+
+    .question {
+      margin-top: 20px;
+    }
+
+    #fruit {
+      font-size: 20px;
+    }
+
+    #wt {
+      width: 50px;
+    }
+
+    #today {
+      font-size: 30px;
+      color: #4caf50;
+    }
+
+    input[type="number"] {
+      width: 50px;
+    }
+
+    input[type="text"] {
+      margin-right: 20px;
+    }
+
+    input[type="text1"] {
+      width: 40px;
+    }
+
+    button[id="checkbutton2"] {
+      width: 200px;
+    }
+
+    button[id="checkbutton1"] {
+      width: 60px;
+      height: 60px;
+      position: absolute;
+      top: 727px;
+      left: 1020px;
+    }
+
+    button[id="reset"] {
+      width: 60px;
+      height: 60px;
+      position: absolute;
+      top: 653px;
+      left: 1020px;
+    }
+
+    button[id="redButton"] {
+      width: 60px;
+      height: 60px;
+      background-color: rgb(240, 87, 87);
+      border: none;
+      outline: none;
+      position: absolute;
+      top: 290px;
+      left: 1020px;
+    }
+
+    button[id="blueButton"] {
+      width: 60px;
+      height: 60px;
+      background-color: rgb(99, 99, 238);
+      border: none;
+      outline: none;
+      position: absolute;
+      top: 360px;
+      left: 1020px;
+    }
+
+    button[id="yellowButton"] {
+      width: 60px;
+      height: 60px;
+      background-color: rgb(247, 247, 100);
+      border: none;
+      outline: none;
+      position: absolute;
+      top: 430px;
+      left: 1020px;
+    }
+  </style>
+</head>
+
+<body>
+  <span id="today">9페이지</span>
+
+  <div class="header">오늘의 날짜를 적어주세요.</div>
+
+  <div class="weather-form">
+    <label for="year">년:</label>
+    <input type="number" id="year" placeholder="년" min="1900" max="2100" />
+
+    <label for="month">월:</label>
+    <input type="number" id="month" placeholder="월" min="1" max="12" />
+
+    <label for="day">일:</label>
+    <input type="number" id="day" placeholder="일" min="1" max="31" />
+
+    <label for="weekday">요일:</label>
+    <input type="text1" id="weekday" placeholder="요일" />
+
+    <label for="weather">날씨:</label>
+    <input type="text1" id="weather" placeholder="날씨" />
+  </div>
+
+  <h2>변비에 좋은 식품 기억하기</h2>
+  <p>다음 식품들 중에서 과일은 빨간색, 채소는 파란색, 곡물은 노란색으로 배경을 바꿔주신 다음, 확인버튼을 눌러주세요!
+  </p>
+
+  <div class="food-list">
+    <div class="food-item">
+      <img src="https://m.ssarijai.com/web/product/big/20231130/5bfb083f8733285bd3b09e3dad371d04.jpg" alt="팥"
+        class="food-image" />
+      <div>팥</div>
+    </div>
+    <div class="food-item">
+      <img
+        src="https://png.pngtree.com/thumb_back/fh260/background/20230730/pngtree-a-bowl-full-of-brown-rice-showing-on-a-white-background-image_10228693.jpg"
+        alt="현미" class="food-image" />
+      <div>현미</div>
+    </div>
+    <div class="food-item">
+      <img src="https://m.segye.com/content/image/2021/05/29/20210529505102.jpg" alt="양배추" class="food-image" />
+      <div>양배추</div>
+    </div>
+    <div class="food-item">
+      <img src="https://cdn.mkhealth.co.kr/news/photo/202308/65397_70005_1958.jpg" alt="오이" class="food-image" />
+      <div>오이</div>
+    </div>
+    <div class="food-item">
+      <img src="https://kormedi.com/wp-content/uploads/2023/07/ck-pc003052084-l-700x555.jpg" alt="자두"
+        class="food-image" />
+      <div>자두</div>
+    </div>
+    <div class="food-item">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Kiwi_%28Actinidia_chinensis%29_1_Luc_Viatour.jpg"
+        alt="키위" class="food-image" />
+      <div>키위</div>
+    </div>
+  </div>
+  <div>
+    <button id="redButton"></button>
+    <button id="blueButton"></button>
+    <button id="yellowButton"></button>
+    <button id="checkbutton1">확인</button>
+    <button id="reset">초기화</button>
+  </div>
+  <fieldset>
+    <legend>식품 기억하기</legend>
+    <div class="footer question">
+      <pre id="fruit">
+1. 다음 식품을 기억하기 쉽게 3가지 분류로 나눠보세요. (n개를 적으실 때 ,표시로 나줘주세요!)
+
+      (과일)             (채소)             (곡물)</pre>
+    </div>
+    <input type="text" /><input type="text" /><input type="text" />
+    <button id="checkbutton2">확인</button>
+  </fieldset>
+
+  <script>
+    let selectedColor = "";
+    let selectedButton = null; 
+    const $redButton = document.querySelector("#redButton");
+    const $blueButton = document.querySelector("#blueButton");
+    const $yellowButton = document.querySelector("#yellowButton");
+    const $checkbutton1 = document.querySelector("#checkbutton1"); 
+    const $foodItems = document.querySelectorAll(".food-item");
+    const buttons = [$redButton, $blueButton, $yellowButton];
+    const colors = ["red", "blue", "yellow"];
+    const $reset = document.querySelector("#reset");
+
+    for (let i = 0; i < buttons.length; i++) {
+      buttons[i].addEventListener("click", () => {
+        if (selectedButton) {
+          selectedButton.style.border = ""; 
+        }
+        buttons[i].style.border = "3px solid black";
+        selectedColor = colors[i]; 
+        selectedButton = buttons[i];
+      });
+    }
+    for (let i = 0; i < $foodItems.length; i++) {
+      $foodItems[i].addEventListener("click", () => {
+        if (selectedColor) {
+          $foodItems[i].style.backgroundColor = selectedColor; 
+        } else {
+          alert("먼저 버튼을 선택해주세요!");
+        }
+      });
+    }
+    $checkbutton1.addEventListener("click", () => {
+      const correctAnswers = {
+        0: "yellow", 
+        1: "yellow",
+        2: "blue", 
+        3: "blue", 
+        4: "red",   
+        5: "red"     
+      };
+      let result = true;
+      for (let i = 0; i < $foodItems.length; i++) {
+        const backgroundColor = $foodItems[i].style.backgroundColor;
+        if (correctAnswers[i] !== backgroundColor) {
+          result = false; 
+          break;
+        }
+      }
+     
+      if (result) {
+        alert("정답!");
+      } else {
+        alert("다시 시도해보세요.");
+        for (let i = 0; i < $foodItems.length; i++) {
+          $foodItems[i].style.backgroundColor = "";
+          selectedColor = "";
+          selectedButton.style.border = "";
+        }
+      }
+    });
+    $reset.addEventListener("click", () => {
+      for (let i = 0; i < $foodItems.length; i++) {
+        $foodItems[i].style.backgroundColor = "";
+      }
+      selectedButton.style.border = ""; 
+      selectedColor = ""; 
+    });
+
+    const $checkbutton2 = document.querySelector("#checkbutton2");
+    $checkbutton2.addEventListener("click", () => {
+      const textbox = document.querySelectorAll("input[type='text']");
+      const fruittext = textbox[0].value.trim();
+      const vegetabletext = textbox[1].value.trim();
+      const graintext = textbox[2].value.trim();
+
+      const Fruit = ["자두", "키위"];
+      const Vegetable = ["양배추", "오이"];
+      const Grain = ["팥", "현미"];
+
+      const array = ((input) => 
+        input.split(",").map(item => item.trim()).filter(Boolean).sort());
+
+      const fruitArray = array(fruittext);
+      const vegetableArray = array(vegetabletext);
+      const grainArray = array(graintext);
+
+      const FruitCheck = JSON.stringify(fruitArray) === JSON.stringify(Fruit.sort());
+      const VegetableCheck = JSON.stringify(vegetableArray) === JSON.stringify(Vegetable.sort());
+      const GrainCheck = JSON.stringify(grainArray) === JSON.stringify(Grain.sort());
+
+      if (FruitCheck && VegetableCheck && GrainCheck) {
+        alert("정답!");
+      } else {
+        alert("다시 시도해보세요.");
+        textbox.forEach(input => (input.value = ""));
+      }
+    });
+
+
+  </script>
+</body>
+
+</html>

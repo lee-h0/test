@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>인트로</title>
+    <style>
+      body {
+        background-color: #9dfbfe;
+        font-family: "Arial", sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .container {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        text-align: center;
+        margin-left: 20px;
+      }
+
+      h1 {
+        font-size: 2.5em;
+        margin-bottom: 10px;
+      }
+
+      p {
+        margin-bottom: 20px;
+        color: #555;
+      }
+
+      input {
+        width: 80%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      input[type="password"] {
+        margin-bottom: 15px;
+      }
+
+      button {
+        width: 85%;
+        padding: 10px;
+        background-color: #ffcc00;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1em;
+      }
+
+      button:hover {
+        background-color: #ff9900;
+      }
+
+      .box { 
+        width: 500px;
+        height: 1015px;
+        background-color: cadetblue;
+        margin: 0px;
+        position: absolute;
+        left: 20px;
+        top: 22px;
+        padding: 5px;
+        border: 3px solid black;
+
+      }
+    </style>
+  </head>
+  <body>
+    
+    <div class="container">
+      <h1>웹프로그래밍 7조</h1>
+      <p>9, 10, 11, 12, 13, 14, 15 숫자 중 하나를 입력하세요.</p>
+      <form id="page">
+        <input type="text" id="pageinput" placeholder="페이지 입력" required />
+        <button type="submit">입장</button>
+      </form>
+    </div>
+    <script>
+      const $page = document.querySelector("#page");
+       $page.addEventListener("submit", (event) => {
+        event.preventDefault();
+        
+        let $pageinput = document.querySelector("#pageinput").value;
+        
+        if (["9", "10", "11", "12", "13", "14", "15"].includes($pageinput)) {
+          window.open("p" + $pageinput + ".html", "_blank");
+        } else {
+          alert("9, 10, 11, 12, 13, 14, 15 중 하나를 입력하세요.");
+        }
+      });
+    </script>
+  </body>
+</html>
